@@ -12,7 +12,7 @@ class Node {
     }
 }
 
-class LL_53 {
+public class LL_53 {
 
     static Node head = null;
 
