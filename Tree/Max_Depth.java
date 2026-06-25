@@ -5,7 +5,7 @@ class TreeNode {
     int data;
     TreeNode left, right;
 
-    TreeNode(int data) {
+    public TreeNode(int data) {
         this.data = data;
     }
 }
@@ -15,7 +15,7 @@ public class Max_Depth {
     static TreeNode root = null;
 
     // Insert level-wise
-    public static TreeNode insert(TreeNode root, int data) {
+    private static TreeNode insert(TreeNode root, int data) {
         TreeNode newNode = new TreeNode(data);
 
         if (root == null) {
@@ -46,7 +46,7 @@ public class Max_Depth {
         return root;
     }
 
-    public static int maxDepth(TreeNode root) {
+    private static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
